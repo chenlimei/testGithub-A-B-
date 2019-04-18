@@ -1,0 +1,18 @@
+---
+exportVersion: "1"
+exportId: "aaaaaa"
+name: "angel-simple-action-n"
+runtime: "nodejs"
+entrypoint: "simple action"
+inputs:
+  target: "world"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+configuration:
+   const-providers:
+   - ""
+   const_azure-system_managed_identity:  false
+actionTemplateName: "Custom script"
+actionTemplateNamespace: "com.vmware.automation.abx"
+memoryInMB: 150
